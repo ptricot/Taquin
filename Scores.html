@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<title>Taquin</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+
+<div class="topnav">
+	<a href="file:taquin_3x3.html">3x3</a>
+	<a href="file:taquin_4x4.html">4x4</a>
+	<a href="file:scores.html" class="active">Scores</a>
+</div>
+
+<div id="3x3">
+	<h3>3x3 scores</h3>
+	<p id="score3"> </p>
+	<p id="test"> </p>
+</div>
+
+<br>
+
+<div id="4x4">
+	<h3>4x4 scores</h3>
+</div>
+<br><br>
+<input id="name" type="text" value="Lhamap">
+<button class="button" type="button" onclick="clearscore()">CLEAR</button>
+<script>
+var text = "";
+for (key in localStorage) {
+	if (localStorage.getItem(key) != null) {
+		text = text + key + ' : ' + localStorage.getItem(key) + ' ---- ';
+	}
+}
+document.getElementById('score3').innerHTML = text;
+//document.getElementById('test').innerHTML = 'oui';	
+</script>
+
+<script>
+function clearscore() {		// fonctionne
+	var name = document.getElementById('name').value;
+	localStorage.removeItem(name);
+}
+</script>
+
+</body>
+
+</html>

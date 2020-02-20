@@ -1,0 +1,15 @@
+.topnav{background-color:#424949;overflow:hidden;width:100%;}
+.topnav a{padding:10px 15px 9px 15px;float:left;color:#ffffff;}
+.active{background-color:#2ecc71;text-decoration:none;color:black;}
+.button{background-color:#111111;color:#aeaeae;padding: 30px 52px;border: 5px solid #333333;width:100%;}
+.button2{background-color:#111111;color:#aeaeae;padding: 15px 20px;border: 5px solid #333333}
+input{background-color:#333333;width:100%;}
+body{background-color:#000000;}
+*{color:#ffffff;font-family:Trebuchet MS;}
+cite{color:#ff0000;}
+a:link{color:#f5cba7;text-decoration: none;}
+a:visited{color:#f9e79f;text-decoration: none;}
+a:hover{color:#aefcae;background-color:#000000;text-decoration: none;}
+a:active{color:#f5cba7;text-decoration: none;}
+img{width:95%;}
+table{width:100%;}
